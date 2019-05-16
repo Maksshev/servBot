@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
+
     ids.forEach(id => {
         bot.sendMessage(id, JSON.stringify(req.body))
     })
